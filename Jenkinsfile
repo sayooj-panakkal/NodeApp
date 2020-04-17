@@ -13,12 +13,12 @@ node {
         app = docker.build("sayoojp/nodeapp")
     }
 
-    stage('Test image') {
+  /*  stage('Test image') {
         
         app.inside {
             echo "Tests passed"
         }
-    }
+    }*/
 
     stage('Push image') {
         /* 
